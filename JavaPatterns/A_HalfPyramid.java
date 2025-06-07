@@ -9,5 +9,5 @@ public class A_HalfPyramid {
             }
             System.out.println();
         }
-    }
+    } 
 }
