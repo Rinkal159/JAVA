@@ -11,6 +11,6 @@ public class A_PrintNum {
     public static void main(String[] args) {
         int n = 1;
 
-        printNum(n);
+        printNum(n); 
     }
 }
