@@ -13,7 +13,7 @@ public class B_MakeREVERSE {
 
             s.setCharAt(left, rightChar);
             s.setCharAt(right, leftChar);
-        }
+        } 
         System.out.println(s);
     }
 }
