@@ -14,7 +14,7 @@ public class B_NumberOfOddDigitsInNumber {
             a /= 10;
             if (rem % 2 != 0) {
                 count++;
-            }
+            } 
         }
         System.out.println("Number of odd digits : " + count);
     }
