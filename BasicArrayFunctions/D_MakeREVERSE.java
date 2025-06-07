@@ -4,16 +4,21 @@ import java.util.Scanner;
 
 public class D_MakeREVERSE {
     public static void printReverse(int[] arr) {
-        System.out.println("Reversed array : ");
+        for (int i=0; i<arr.length/2; i++){
+            int left = i; 
+            int right = arr.length-1-i;
 
-        int[] emptyArr = new int[arr.length];
-        
-        for (int i = 0; i < arr.length; i++) {
-            emptyArr[i] = arr[arr.length-1-i];
+            int leftNum = arr[left];
+            int rightNum = arr[right];
+
+            arr[left] = rightNum;
+            arr[right] = leftNum;
         }
 
-        for(int i : emptyArr) {
-            System.out.print(i + " ");
+        System.out.println("Reversed array : ");
+
+        for (int num : arr) {
+            System.out.print(num + " ");
         }
 
     }
