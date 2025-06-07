@@ -1,19 +1,19 @@
 package Recursion;
 
 public class C_Factorial {
-    public static void printFactorial(int i, int n, int fact) {
-        if (i > n) {
+    public static void printFactorial(int n, int fact) {
+        if (n <= 0) {
             System.out.println("Factorial : " + fact);
             return;
         }
-        fact *= i;
-        printFactorial(i + 1, n, fact);
+        fact *= n;
+        printFactorial(n - 1, fact);
     }
 
     public static void main(String[] args) {
-        int n = 10;
+        int n = 0;
         int fact = 1;
 
-        printFactorial(1, n, fact);
+        printFactorial(n, fact);
     }
 }
