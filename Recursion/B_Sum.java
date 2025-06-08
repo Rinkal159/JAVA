@@ -1,18 +1,19 @@
 package Recursion;
 
 public class B_Sum {
-    public static void printNum(int n, int sum) {
-        if(n>5) {
+    public static void printNum(int i, int n, int sum) {
+        if (i > n) {
             System.out.println("sum of first n numbers : " + sum);
             return;
         }
-        sum += n;
-        printNum(n+1, sum);
+        sum += i;
+        printNum(i + 1, n, sum);
     }
+
     public static void main(String[] args) {
-        int n = 1;
+        int n = 10;
         int sum = 0;
 
-        printNum(n, sum);
+        printNum(1, n, sum);
     }
 }
