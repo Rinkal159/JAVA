@@ -9,9 +9,9 @@ public class N_RotateArray {
             return;
         }
         arr.add(arr.get(0));
-        arr.remove(arr.get(0));
+        arr.remove(arr.get(0)); 
         printRorate(arr, target - 1);
-    }
+    }   
 
     public static void main(String[] args) {
         ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
