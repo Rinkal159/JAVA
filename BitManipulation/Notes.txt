@@ -1,0 +1,15 @@
+-> AND with 1 gives same number.
+-> OR with 0 gives same number.
+
+ex. Number : 1010
+1 0 1 0          1 0 1 0
+1 1 1 1          0 0 0 0
+  AND               OR
+-------          -------
+1 0 1 0 (same)   1 0 1 0 (same)
+
+-> If we want 1 in anycase, so set 1 below our position and do "OR" opeartion and to ensure other numbers remain same, set 0 below them.
+-> If we want 0 in anycase, so set 0 below our position and do "AND" opeartion and to ensure other numbers remain same, set 1 below them.
+    -> SUMMERY : to get 1, do OR with 1.
+                 to get 0, do AND with 0.
+
