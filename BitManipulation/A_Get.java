@@ -10,8 +10,8 @@ public class A_Get {
     }
 
     public static void main(String[] args) {
-        int a = 109;
-        int i = 4;
+        int a = 5;
+        int i = 1;
 
         System.out.println("Numbers at position i is " + getBit(a, i));
 
