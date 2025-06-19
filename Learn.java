@@ -6,7 +6,7 @@ public class Learn {
         System.out.print("The number : ");
         int a = x.nextInt();
         int rem = 0;
-        int count = 0; b   
+        int count = 0; 
 
         while (a > 0) {
             rem = a % 10;
