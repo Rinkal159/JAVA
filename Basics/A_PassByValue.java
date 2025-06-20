@@ -1,4 +1,5 @@
-public class PassByValue {
+package Basics;
+public class A_PassByValue {
     public static int printMulty(int a) {
         return a*=2;
     }

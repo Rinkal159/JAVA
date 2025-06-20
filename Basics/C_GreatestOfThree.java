@@ -1,4 +1,5 @@
-public class GreatestOfThree {
+package Basics;
+public class C_GreatestOfThree {
     public static void main(String[] args) {
         int a = 16;
         int b = 16;

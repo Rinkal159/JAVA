@@ -1,5 +1,6 @@
+package Basics;
 import java.util.*;
-public class Calculator {
+public class D_Calculator {
 
     public static void printResult(int a, int b, int c) {
         switch (c) {

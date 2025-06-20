@@ -1,4 +1,5 @@
-public class PassByReference {
+package Basics;
+public class B_PassByReference {
     public static int printMulty(int[] arr) {
         return arr[0]*=2;
     }
