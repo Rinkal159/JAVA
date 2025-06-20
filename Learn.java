@@ -1,20 +1,34 @@
-import java.util.*;
-
 public class Learn {
-    public static void main(String[] args) {
-        Scanner x = new Scanner(System.in);
-        System.out.print("The number : ");
-        int a = x.nextInt();
-        int rem = 0;
-        int count = 0;
+    public static String emptystr = "";
 
-        while (a > 0) {
-            rem = a % 10;
-            a /= 10;
-            if (rem % 2 != 0) {
-                count++;
+    public static void homework(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            int min = i;
+            int count = 0;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[min] < arr[j]) {
+                    min = j;
+                    count++;
+                }
+
             }
+            if (count == arr.length - 1) {
+                System.out.println("already sorted!");
+                return;
+            }
+            int temp = arr[i];
+            arr[i] = arr[min];
+            arr[min] = temp;
         }
-        System.out.println("Number of odd digits : " + count);
+
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] arr = { 3, 6, 2, 1, 8, 7, 4, 5, 3, 1 };
+
+        homework(arr);
     }
 }
