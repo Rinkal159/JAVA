@@ -53,7 +53,7 @@ public class F_MergeSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 2, 1, 5, 3, 4 };
+        int[] arr = { 5, 2, 9, 3,1,7, 10 };
         int low = 0;
         int high = arr.length - 1;
 
