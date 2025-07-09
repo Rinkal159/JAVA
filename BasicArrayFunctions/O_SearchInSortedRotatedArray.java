@@ -11,24 +11,24 @@ public class O_SearchInSortedRotatedArray {
             if (arr[mid] == target) {
                 return mid;
 
-            } else if (arr[low] <= arr[mid]) {
+            } else if (arr[low] < arr[mid]) {
 
-                // if low is less, then target must be greater than both OR lesser than both.
+                // if low is less, first condition will go to right
 
                 if ((target > arr[mid] && target > arr[low]) || (target < arr[mid] && target < arr[low])) {
-                    low = mid + 1;
+                    low = mid + 1; // to right
                 } else {
-                    high = mid - 1;
+                    high = mid - 1; // to left
                 }
 
-            } else if (arr[low] >= arr[mid]) {
+            } else if (arr[low] > arr[mid]) {
 
-                // if low is graeter then target must be greater than mid but lesser than low.
+                // if low is graeter then first condition will go to left.
 
-                if (target > arr[mid] && target < arr[low]) {
-                    low = mid + 1;
+                if ((target > arr[mid] && target >= arr[low]) || (target < arr[mid] && target <= arr[low])) {
+                    high = mid - 1; // to left
                 } else {
-                    high = mid - 1;
+                    low = mid + 1; // to right
                 }
             }
         }
@@ -36,8 +36,8 @@ public class O_SearchInSortedRotatedArray {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 3, 3, 1, 2 };
-        int target = 3;
+        int[] arr = { 4, 5, 6, 7, 0, 1, 2 };
+        int target = 0;
 
         System.out.println("Target is at index: " + searchTarget(arr, target));
     }
