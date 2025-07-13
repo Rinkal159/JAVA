@@ -9,17 +9,17 @@ public class K_TrapRainWater {
         left[0] = arr[0];
 
         for (int i = 1; i < arr.length; i++) {
-            left[i] = Math.max(left[i-1], arr[i]);
+            left[i] = Math.max(left[i - 1], arr[i]);
         }
         return left;
     }
 
     public static int[] rightMax(int[] arr) {
         int[] right = new int[arr.length];
-        right[arr.length-1] = arr[arr.length-1];
+        right[arr.length - 1] = arr[arr.length - 1];
 
         for (int i = arr.length - 2; i >= 0; i--) {
-            right[i] = Math.max(right[i+1], arr[i]);
+            right[i] = Math.max(right[i + 1], arr[i]);
         }
         return right;
     }
@@ -35,7 +35,7 @@ public class K_TrapRainWater {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 4, 2, 0, 6, 3, 2, 5};
+        int[] arr = { 0, 1, 2, 3, 4, 5 };
 
         if (arr.length == 1 || arr.length == 2) {
             System.out.println("Array length must be greater than 2");
