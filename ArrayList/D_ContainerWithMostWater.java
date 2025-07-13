@@ -1,31 +1,30 @@
 package ArrayList;
 
 public class D_ContainerWithMostWater {
-    public static int findMax(int[] arr) {
-        int max = arr[0];
-        int maxIdx = -1;
-        for (int i = 1; i < arr.length; i++) {
-            // max = Math.max(arr[i], max);
-            if (arr[i] > max) {
-                max= arr[i];
-                maxIdx = i;
-            }
-        }
-        return maxIdx;
-    }
 
-    public static int findMaxWater(int[] arr) {
-        int maxIdx = findMax(arr);
+    public static int findMaxWater(int[] arr, int left, int right) {
         int maxArea = Integer.MIN_VALUE;
+        while (left < right) {
+            int height = Math.min(arr[left], arr[right]);
+            int width = right - left;
 
-        for (int i = 0; i < arr.length; i++) {
-            maxArea = Math.max(maxArea, (arr[i] * Math.abs(maxIdx - i)));
+            maxArea = Math.max(maxArea, (height * width));
+
+            if (arr[left] < arr[right]) {
+                left++;
+            } else {
+                right--;
+            }
+
         }
         return maxArea;
     }
 
     public static void main(String[] args) {
         int[] arr = { 7, 140, 500, 30, 20, 150, 90 };
-        System.out.println(findMaxWater(arr));
+        int left = 0;
+        int right = arr.length - 1;
+
+        System.out.println(findMaxWater(arr, left, right));
     }
 }
