@@ -57,10 +57,10 @@ public class F_Sudoku {
 
             if (isSafe(arr, row, col, num)) {
                 arr[row][col] = num;
-                if (sudoku(arr, newRow, newCol)) {
+                if (sudoku(arr, newRow, newCol)) { //recursion
                     return true;
                 }
-                arr[row][col] = 0;
+                arr[row][col] = 0; //backtracking
             }
         }
 
