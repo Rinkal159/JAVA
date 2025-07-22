@@ -37,6 +37,7 @@ public class D_PrintLL {
 
     }
 
+    // time complexity : O(n)
     public void print() {
         if(head == null) {
             System.out.println("Linked List is empty");
