@@ -1,5 +1,7 @@
 package LinkedList.SinglyLinkedList;
 
+// time complexity : O(n);
+
 public class E_AddInMiddle {
     class Node {
         int data;
@@ -38,6 +40,8 @@ public class E_AddInMiddle {
 
     // add middle
     public boolean addDataInMiddle(int idx, int data) {
+        Node n1 = new Node(data);
+
         if (idx == 0) {
             addFirst(data);
             return true;
@@ -50,12 +54,13 @@ public class E_AddInMiddle {
             temp = temp.next;
             i++;
         }
+
         if (temp == null || temp.next == null) {
             System.out.println();
             System.out.print("index " + idx + " is out of bounds");
             return false;
         }
-        Node n1 = new Node(data);
+
         n1.next = temp.next;
         temp.next = n1;
 
