@@ -33,9 +33,10 @@ public class E_AddInMiddle {
     public void printLL() {
         Node temp = head;
         while (temp != null) {
-            System.out.print(temp.data + " ");
+            System.out.print(temp.data + " -> ");
             temp = temp.next;
         }
+        System.out.println("null");
     }
 
     // add middle
@@ -79,7 +80,6 @@ public class E_AddInMiddle {
         e1.printLL();
 
         if (e1.addDataInMiddle(4, 1)) {
-            System.out.println();
             System.out.println("After adding in middle : ");
             e1.printLL();
         }

@@ -45,9 +45,10 @@ public class D_PrintLL {
 
         Node temp = head;
         while(temp != null) {
-            System.out.print(temp.data + " "); // "temp.data"
+            System.out.print(temp.data + " -> "); // "temp.data"
             temp = temp.next;
         }
+        System.out.println("null");
     }
 
     public static void main(String[] args) {
