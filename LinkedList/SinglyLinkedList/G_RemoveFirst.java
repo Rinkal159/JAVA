@@ -30,7 +30,21 @@ public class G_RemoveFirst {
         head = n1;
     }
 
+    public void print() {
+        if (head == null) {
+            System.out.print("Linked List is empty");
+        }
+
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " -> "); // "temp.data"
+            temp = temp.next;
+        }
+        System.out.println("null");
+    }
+
     public int removeFirst() {
+
         if (head == null) {
             size = 0;
             return Integer.MIN_VALUE;
@@ -41,35 +55,27 @@ public class G_RemoveFirst {
             size = 0;
             return value;
         }
+
         int value = head.data;
         head = head.next;
         size--;
         return value;
     }
 
-    public void print() {
-        if (head == null) {
-            System.out.print("Linked List is empty");
-        }
-
-        Node temp = head;
-        while (temp != null) {
-            System.out.print(temp.data + " "); // "temp.data"
-            temp = temp.next;
-        }
-    }
-
     public static void main(String[] args) {
         G_RemoveFirst g1 = new G_RemoveFirst();
-        // g1.addElementFirst(1);
-        // g1.addElementFirst(0);
-        
-        System.out.println("Removed element : " + g1.removeFirst());
 
-        System.out.print("LL : ");
+        g1.addElementFirst(1);
+        g1.addElementFirst(0);
+
+        System.out.print("LL before removal : ");
         g1.print();
 
-        System.out.println();
+        System.out.println("Removed element : " + g1.removeFirst());
+
+        System.out.print("LL after removal : ");
+        g1.print();
+
         System.out.println("size : " + size);
     }
 }
