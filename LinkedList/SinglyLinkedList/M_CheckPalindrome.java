@@ -1,5 +1,7 @@
 package LinkedList.SinglyLinkedList;
 
+// time complexity : O(n);
+
 public class M_CheckPalindrome {
     class Node {
         int data;
