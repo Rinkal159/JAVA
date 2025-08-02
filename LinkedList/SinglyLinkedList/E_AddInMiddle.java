@@ -29,6 +29,19 @@ public class E_AddInMiddle {
         head = n1;
     }
 
+    // add last
+    public void addLast(int data) {
+        Node n1 = new Node(data);
+
+        if (head == null) {
+            head = tail = n1;
+            return;
+        }
+        tail.next = n1;
+        tail = n1;
+
+    }
+
     // print
     public void printLL() {
         Node temp = head;
@@ -43,23 +56,30 @@ public class E_AddInMiddle {
     public boolean addDataInMiddle(int idx, int data) {
         Node n1 = new Node(data);
 
+        int size = 0;
+        Node sizeTemp = head;
+
+        while (sizeTemp != null) {
+            sizeTemp = sizeTemp.next;
+            size++;
+        }
+
         if (idx == 0) {
             addFirst(data);
             return true;
         }
 
+        if (idx >= size) {
+            System.out.print("index " + idx + " is out of bounds");
+            return false;
+        }
+
         int i = 0;
         Node temp = head;
 
-        while (temp != null && i != idx - 1 && temp.next != null) {
+        while (i != idx - 1) {
             temp = temp.next;
             i++;
-        }
-
-        if (temp == null || temp.next == null) {
-            System.out.println();
-            System.out.print("index " + idx + " is out of bounds");
-            return false;
         }
 
         n1.next = temp.next;
@@ -79,7 +99,7 @@ public class E_AddInMiddle {
         System.out.println("Before adding in middle : ");
         e1.printLL();
 
-        if (e1.addDataInMiddle(4, 1)) {
+        if (e1.addDataInMiddle(3, 10)) {
             System.out.println("After adding in middle : ");
             e1.printLL();
         }
