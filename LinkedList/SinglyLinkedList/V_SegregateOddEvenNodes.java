@@ -60,14 +60,31 @@ public class V_SegregateOddEvenNodes {
     public void odd() {
         Node temp = head;
 
+        V_SegregateOddEvenNodes v2 = new V_SegregateOddEvenNodes();
+
         while (temp != null) {
 
-            if (temp.next == null || temp.next.next == null) {
+            if (temp.next == null) {
+                break;
+            }
+            if (temp.next.next == null) {
+                v2.addLast(temp.next.data);
                 temp.next = null;
                 break;
             }
+            v2.addLast(temp.next.data);
             temp.next = temp.next.next;
             temp = temp.next;
+        }
+
+        Node evenHead = v2.head;
+        Node tempEvenHead = evenHead;
+
+        // merge odd and even
+        while (tempEvenHead != null) {
+            temp.next = tempEvenHead;
+            temp = temp.next;
+            tempEvenHead = tempEvenHead.next;
         }
     }
 
@@ -79,9 +96,12 @@ public class V_SegregateOddEvenNodes {
         v1.addLast(4);
         v1.addLast(5);
         v1.addLast(6);
+        // v1.addLast(7);
 
         v1.print();
         v1.odd();
+
+        System.out.println("After odd-even segregation : ");
         v1.print();
     }
 }
