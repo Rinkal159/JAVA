@@ -48,6 +48,7 @@ public class P_MergeSort {
     public void print() {
         if(head == null) {
             System.out.println("Linked List is empty");
+            return;
         }
 
         Node temp = head;

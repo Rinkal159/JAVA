@@ -39,12 +39,13 @@ public class D_PrintLL {
 
     // time complexity : O(n)
     public void print() {
-        if(head == null) {
+        if (head == null) {
             System.out.println("Linked List is empty");
+            return;
         }
 
         Node temp = head;
-        while(temp != null) {
+        while (temp != null) {
             System.out.print(temp.data + " -> "); // "temp.data"
             temp = temp.next;
         }

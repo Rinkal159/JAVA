@@ -33,6 +33,7 @@ public class H_RemoveLast {
     public void print() {
         if (head == null) {
             System.out.print("Linked List is empty");
+            return;
         }
 
         Node temp = head;

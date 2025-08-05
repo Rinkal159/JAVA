@@ -47,6 +47,7 @@ public class W_Sort0s1s2s {
     public void print() {
         if (head == null) {
             System.out.println("Linked List is empty");
+            return;
         }
 
         Node temp = head;

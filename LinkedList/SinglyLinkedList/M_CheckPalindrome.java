@@ -48,6 +48,7 @@ public class M_CheckPalindrome {
     public void print() {
         if (head == null) {
             System.out.print("Linked List is empty");
+            return;
         }
 
         Node temp = head;
