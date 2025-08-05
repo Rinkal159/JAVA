@@ -1,6 +1,6 @@
 package LinkedList.SinglyLinkedList;
 
-public class ZA_SizeOfLoop {
+public class Za_SizeOfLoop {
     class Node {
         int data;
         Node next;
@@ -63,7 +63,7 @@ public class ZA_SizeOfLoop {
     }
 
     public static void main(String[] args) {
-        ZA_SizeOfLoop za1 = new ZA_SizeOfLoop();
+        Za_SizeOfLoop za1 = new Za_SizeOfLoop();
         za1.addElements();
         System.out.println("Size of loop : " + za1.cycle());
     }
