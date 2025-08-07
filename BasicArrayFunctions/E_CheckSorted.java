@@ -3,27 +3,26 @@ package BasicArrayFunctions;
 import java.util.Scanner;
 
 public class E_CheckSorted {
+    public static Boolean isAscending = false;
+    public static Boolean isDescending = false;
 
     public static Boolean isSorted(int[] arr) {
 
-        Boolean isAscending = false;
-        Boolean isDescending = false;
-        
         for (int i = 0; i < arr.length - 1; i++) {
 
-            int diff = arr[i] - arr[i + 1];
-
-            if (diff < 0) {
+            if (arr[i + 1] > arr[i]) {
                 if (isDescending) {
                     return false;
                 }
                 isAscending = true;
 
-            } else if (diff > 0) {
+            } else if (arr[i + 1] < arr[i]) {
                 if (isAscending) {
                     return false;
                 }
                 isDescending = true;
+            } else {
+                return false;
             }
         }
         return true;
