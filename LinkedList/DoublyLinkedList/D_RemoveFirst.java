@@ -40,7 +40,7 @@ public class D_RemoveFirst {
 
         Node temp = head;
         while (temp != null) {
-            System.out.print(temp.data + " -> ");
+            System.out.print(temp.data + " <-> ");
             temp = temp.next;
         }
         System.out.println("null");
