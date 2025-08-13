@@ -1,7 +1,5 @@
 package LinkedList.SinglyLinkedList;
 
-import java.util.LinkedList;
-
 public class P_MergeSort {
     class Node {
         int data;

@@ -1,7 +1,5 @@
 package BasicArrayFunctions;
 
-import java.util.Arrays;
-
 public class K_TrapRainWater {
 
     public static int[] leftMax(int[] arr) {

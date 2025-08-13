@@ -1,7 +1,5 @@
 package BasicStringFunctions;
 
-import java.util.*;
-
 public class H_CheckAnagram {
 
     public static void isAnagram(StringBuilder sb, StringBuilder tb) {

@@ -1,7 +1,5 @@
 package BasicArrayFunctions;
 
-import java.util.Scanner;
-
 public class I_SubArraysSum {
     public static void subArrays(int[] arr) {
 

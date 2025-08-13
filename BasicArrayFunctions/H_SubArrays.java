@@ -1,7 +1,5 @@
 package BasicArrayFunctions;
 
-import java.util.Scanner;
-
 public class H_SubArrays {
     public static void subArrays(int[] arr) {
 
