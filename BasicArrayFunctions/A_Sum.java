@@ -27,5 +27,7 @@ public class A_Sum {
         }
 
         System.out.println("Sum of elements : " + printSum(arr));
+
+        x.close();
     } 
 }

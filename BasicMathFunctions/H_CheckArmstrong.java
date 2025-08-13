@@ -1,7 +1,6 @@
 package BasicMathFunctions;
 
 import java.util.Scanner;
-import java.lang.*;
 
 public class H_CheckArmstrong {
 
@@ -43,5 +42,7 @@ public class H_CheckArmstrong {
         int a = x.nextInt();
 
         System.out.println("ArmStrong : " + isArmstrong(calcCount(a), a));
+
+        x.close();
     }
 }

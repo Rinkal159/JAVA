@@ -30,5 +30,7 @@ public class J_SortByFrequency {
         StringBuilder sb = new StringBuilder(str);
 
         noDuplicates(sb);
+
+        x.close();
     }
 }

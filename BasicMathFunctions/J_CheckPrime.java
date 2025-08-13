@@ -33,5 +33,7 @@ public class J_CheckPrime {
         } else {
             System.out.println("It is not a prime number");
         }
+
+        x.close();
     }
 }

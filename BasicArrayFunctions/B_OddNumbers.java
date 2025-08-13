@@ -28,5 +28,7 @@ public class B_OddNumbers {
         }
 
         System.out.println("Odd elements : " + printSum(arr));
+
+        x.close();
     }
 }

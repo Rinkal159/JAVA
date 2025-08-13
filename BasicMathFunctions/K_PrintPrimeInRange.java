@@ -39,5 +39,7 @@ public class K_PrintPrimeInRange {
         int a = x.nextInt();
 
         System.out.println("Prime numbers : " + printPrime(a));
+
+        x.close();
     }
 }

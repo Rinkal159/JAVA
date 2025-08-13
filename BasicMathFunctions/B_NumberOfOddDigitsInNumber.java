@@ -17,5 +17,7 @@ public class B_NumberOfOddDigitsInNumber {
             } 
         }
         System.out.println("Number of odd digits : " + count);
+
+        x.close();
     }
 }

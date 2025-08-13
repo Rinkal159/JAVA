@@ -26,5 +26,7 @@ public class C_PrintREVERSE {
         }
 
         printReverse(arr);
+
+        x.close();
     }
 }

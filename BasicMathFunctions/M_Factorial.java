@@ -23,5 +23,7 @@ public class M_Factorial {
             System.out.println("User cannot enter decimal values : " + err);
         }
 
+        x.close();
+
     }
 }

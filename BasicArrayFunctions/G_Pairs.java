@@ -32,5 +32,7 @@ public class G_Pairs {
         }
 
         printPairs(arr);
+
+        x.close();
     }
 }

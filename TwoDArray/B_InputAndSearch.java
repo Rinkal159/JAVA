@@ -30,5 +30,7 @@ public class B_InputAndSearch {
                 }
             }
         }
+
+        x.close();
     }
 }

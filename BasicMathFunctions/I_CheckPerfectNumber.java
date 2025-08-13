@@ -34,5 +34,7 @@ public class I_CheckPerfectNumber {
         int a = x.nextInt();
 
         System.out.println("Perfect Number : " + isPerfect(printDivisors(a), a));
+
+        x.close();
     }
 }

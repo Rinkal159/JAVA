@@ -6,7 +6,6 @@ public class L_GCD {
 
     public static int printGCD(int a, int b) {
         int rem = 1;
-        int c;
 
         while (rem > 0) {
             rem = a % b;
@@ -25,5 +24,7 @@ public class L_GCD {
         b = Math.min(a, b);
 
         System.out.println(printGCD(a, b));
+
+        x.close();
     }
 }

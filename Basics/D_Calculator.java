@@ -52,5 +52,6 @@ public class D_Calculator {
 
         printResult(a, b, command);
 
+        x.close();
     }
 }

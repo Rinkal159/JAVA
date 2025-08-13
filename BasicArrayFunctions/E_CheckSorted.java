@@ -42,5 +42,7 @@ public class E_CheckSorted {
         }
 
         System.out.println("Sorted : " + isSorted(arr));
+
+        x.close();
     }
 }

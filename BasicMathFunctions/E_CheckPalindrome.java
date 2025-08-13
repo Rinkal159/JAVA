@@ -27,5 +27,7 @@ public class E_CheckPalindrome {
         int a = x.nextInt();
 
         System.out.println("Palindrome : " + isPalindrome(a));
+
+        x.close();
     }
 }

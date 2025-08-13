@@ -25,5 +25,6 @@ public class D_CheckPalindrome {
 
         System.out.println("Palindrome : " + isPalindrome(s));
 
+        x.close();
     }
 }

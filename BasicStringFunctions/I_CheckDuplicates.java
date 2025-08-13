@@ -36,5 +36,7 @@ public class I_CheckDuplicates {
         String s = x.next();
 
         noDuplicates(s);
+
+        x.close();
     }
 }

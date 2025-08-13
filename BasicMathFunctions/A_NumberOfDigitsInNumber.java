@@ -23,5 +23,7 @@ public class A_NumberOfDigitsInNumber {
         int a = x.nextInt();
 
         System.out.println("Number of digits : " + countDigits(a));
+
+        x.close();
     }
 }

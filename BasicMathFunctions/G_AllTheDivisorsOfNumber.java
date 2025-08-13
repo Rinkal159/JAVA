@@ -20,5 +20,7 @@ public class G_AllTheDivisorsOfNumber {
         int a = x.nextInt();
 
         System.out.println("Divisors : " + printAllDivisors(a));
+
+        x.close();
     }
 }

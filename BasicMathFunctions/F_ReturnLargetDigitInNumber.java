@@ -24,5 +24,7 @@ public class F_ReturnLargetDigitInNumber {
         int a = x.nextInt();
 
         System.out.println("Larget digit : " + printLargetDigit(a));
+
+        x.close();
     }
 }

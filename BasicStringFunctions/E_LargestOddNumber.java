@@ -38,5 +38,7 @@ public class E_LargestOddNumber {
         } else {
             System.out.println("Invalid input");
         }
+
+        x.close();
     }
 }

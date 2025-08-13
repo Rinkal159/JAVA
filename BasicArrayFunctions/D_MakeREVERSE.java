@@ -37,5 +37,7 @@ public class D_MakeREVERSE {
         }
 
         printReverse(arr);
+
+        x.close();
     }
 }
