@@ -8,9 +8,9 @@ public class L_Subsequences {
         }
         char currChar = s.charAt(i);
 
-        // printSubSEQ(i+1, s, newString+currChar);
+        printSubSEQ(i+1, s, newString+currChar);
 
-        // printSubSEQ(i+1, s, newString);
+        printSubSEQ(i+1, s, newString);
     }
     public static void main(String[] args) {
         String s = "abc";
