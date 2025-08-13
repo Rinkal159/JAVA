@@ -14,7 +14,6 @@ public class E_Power {
     public static void main(String[] args) {
         int n = 5;
         int a = 2;
-        int p = 1;
 
         System.out.println(printPower(a, n));
     }
