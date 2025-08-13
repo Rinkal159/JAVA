@@ -3,37 +3,31 @@ package BasicMathFunctions;
 import java.util.Scanner;
 
 public class H_CheckArmstrong {
-
+    
     public static int calcCount(int a) {
-        int rem = 0;
-        int copyA = a;
         int count = 0;
 
-        while (copyA > 0) {
-            rem = copyA % 10;
-            copyA /= 10;
+        while (a != 0) {
+            a /= 10;
             count++;
         }
+
         return count;
 
     }
 
     public static Boolean isArmstrong(int count, int a) {
         int rem = 0;
-        int lastDigit = 0;
-        int copyA = a;
+        int sum = 0;
+        int temp = a;
 
-        while (copyA > 0) {
-            rem = copyA % 10;
-            copyA /= 10;
-            lastDigit += (Math.pow(rem, count));
+        while (temp != 0) {
+            rem = temp % 10;
+            temp /= 10;
+            sum += (Math.pow(rem, count));
         }
 
-        if (a == lastDigit) {
-            return true;
-        } else {
-            return false;
-        }
+        return a == sum;
     }
 
     public static void main(String[] args) {
