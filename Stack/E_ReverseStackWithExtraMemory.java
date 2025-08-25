@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Stack;
+// time complexity : O(n)
 
 public class E_ReverseStackWithExtraMemory {
     static ArrayList<Integer> arr = new ArrayList<>();
