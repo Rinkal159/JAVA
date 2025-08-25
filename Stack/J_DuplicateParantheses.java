@@ -9,10 +9,12 @@ public class J_DuplicateParantheses {
         for (int i = 0; i < s.length(); i++) {
             char currChar = s.charAt(i);
 
+            // skip 
             if (currChar != '(' && currChar != ')') {
                 continue;
             }
 
+            // only push opening
             if (currChar == '(') {
                 stack.push(i);
 
@@ -30,7 +32,7 @@ public class J_DuplicateParantheses {
     }
 
     public static void main(String[] args) {
-        String s = "((a+b) + ((e)))";
+        String s = "(())";
 
         System.out.println("Duplicate parantheses : " + duplicateParantheses(s));
     }
