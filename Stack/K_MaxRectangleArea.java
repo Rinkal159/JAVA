@@ -1,4 +1,5 @@
 import java.util.Stack;
+// time complexity : O(n);
 
 public class K_MaxRectangleArea {
 
