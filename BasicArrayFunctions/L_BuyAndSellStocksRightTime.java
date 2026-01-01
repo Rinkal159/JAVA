@@ -6,14 +6,15 @@ public class L_BuyAndSellStocksRightTime {
         int max = Integer.MIN_VALUE;
 
         for (int i = 1; i < arr.length; i++) {
-            buying = Math.min(arr[i - 1], buying); //to find minimum value in backward, not considering even current value
-            max = Math.max((arr[i] - buying), max); //to find maximum profit
+            buying = Math.min(arr[i - 1], buying); // to find minimum value in backward, not considering even current
+                                                   // value
+            max = Math.max((arr[i] - buying), max); // to find maximum profit
         }
         return max;
     }
 
     public static void main(String[] args) {
-        int[] arr = { 6, 5, 4, 3, 2, 1 };
+        int[] arr = { 7, 1, 5, 3, 6, 4 };
 
         int max = maxProfit(arr);
 
