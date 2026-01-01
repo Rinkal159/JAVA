@@ -6,7 +6,7 @@ public class O_SearchInSortedRotatedArray {
         int high = arr.length - 1;
 
         while (low <= high) {
-            int mid = (low + high) / 2;
+            int mid = (low + high) % 2 == 0 ? (low + high) / 2 : (low + high) / 2 + 1;
 
             if (arr[mid] == target) {
                 return mid;
@@ -37,7 +37,7 @@ public class O_SearchInSortedRotatedArray {
 
     public static void main(String[] args) {
         int[] arr = { 4, 5, 6, 7, 0, 1, 2 };
-        int target = 0;
+        int target = 90;
 
         System.out.println("Target is at index: " + searchTarget(arr, target));
     }
