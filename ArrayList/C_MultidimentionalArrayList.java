@@ -30,10 +30,7 @@ public class C_MultidimentionalArrayList {
         System.out.println("Advance for loop : ");
 
         for (ArrayList<Integer> i : list) {
-            for (int j : i) {
-                System.out.print(j + " ");
-            }
-            System.out.println();
+            System.out.println(i);
         }
 
         // for each
