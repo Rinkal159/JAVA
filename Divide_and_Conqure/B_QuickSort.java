@@ -13,12 +13,12 @@ public class B_QuickSort {
         int j = high; // should always lesser than pivot
 
         while (i < j) {
-            // increment i if it is less beacuse we want greater i
+            // increment i if it is less beacuse we want greater i to "SWAP" with lesser j
             while (arr[i] <= pivot && i < high) {
                 i++;
             }
 
-            // decrement j if it is greater beacuse we want lesser j
+            // decrement j if it is greater beacuse we want lesser j to "SWAP" withj greater i
             while (arr[j] >= pivot && j > low) {
                 j--;
             }
