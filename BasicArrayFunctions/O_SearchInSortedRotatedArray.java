@@ -5,7 +5,7 @@ public class O_SearchInSortedRotatedArray {
         int low = 0;
         int high = arr.length - 1;
 
-        while (low <= high) {
+        while (low < high) {
             int mid = (low + high) % 2 == 0 ? (low + high) / 2 : (low + high) / 2 + 1;
 
             if (arr[mid] == target) {
