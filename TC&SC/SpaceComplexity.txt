@@ -1,0 +1,5 @@
+* Space Complexity
+
+Space complexity = Auxiliary space + Input space
+    Auxiliary space : The extra space you used to solve the problem
+    Input space : The space you used to store the input
