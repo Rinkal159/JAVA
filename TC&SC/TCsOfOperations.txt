@@ -1,0 +1,47 @@
+* List
+
+------------------------------------------------------------
+| Operation          | Average Case | Amortized Worst Case |
+|--------------------|--------------|----------------------|
+| Copy               | O(n)         | O(n)                 |
+| Append[1]          | O(1)         | O(1)                 |
+| Pop last           | O(1)         | O(1)                 |
+| Pop intermediate[2]| O(n)         | O(n)                 |
+| Insert             | O(n)         | O(n)                 |
+| Get Item           | O(1)         | O(1)                 |
+| Set Item           | O(1)         | O(1)                 |
+| Delete Item        | O(n)         | O(n)                 |
+| Iteration          | O(n)         | O(n)                 |
+| Get Slice          | O(k)         | O(k)                 |
+| Del Slice          | O(n)         | O(n)                 |
+| Set Slice          | O(k+n)       | O(k+n)               |
+| Extend[1]          | O(k)         | O(k)                 |
+| Sort               | O(n log n)   | O(n log n)           |
+| Multiply           | O(nk)        | O(nk)                |
+| x in s             | O(n)         | O(n)                 |
+| min(s), max(s)     | O(n)         | O(n)                 |
+^ Get Length         | O(1)         | O(1)                 |
+------------------------------------------------------------
+
+
+* Set
+
+------------------------------------------------------------
+| Operation          | Average Case | Amortized Worst Case |
+|--------------------|--------------|----------------------|
+| x in s             | O(1)         | O(n)                 |
+------------------------------------------------------------
+
+
+* Dictionary
+
+---------------------------------------------------------
+| Operation       | Average Case | Amortized Worst Case |
+|-----------------|--------------|----------------------|
+| k in d          | O(1)         | O(n)                 |
+| Copy[3]         | O(n)         | O(n)                 |
+| Get Item        | O(1)         | O(n)                 |
+| Set Item[1]     | O(1)         | O(n)                 |
+| Delete Item     | O(1)         | O(n)                 |
+| Iteration[3]    | O(n)         | O(n)                 |
+---------------------------------------------------------
