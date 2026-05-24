@@ -1,0 +1,44 @@
+* Time complexity:
+
+→ The rate of increase in time with resoect of input size.
+
+→ Three things to remember in Time Complexity:
+    1. Always calculate Time Complexity in the terms of worst case.
+    2. Avoid the constant values
+    3. Avoid lower bound
+
+For example,
+in loop like this:
+for (int i=0, n=5; i < n; i++) {
+    System.out.println(i);
+}
+
+Now, in this program, 
+    - during every iteration, three operations are done : Comparing i's value with the n, printng i and incrementing i
+    - so after n oerations there will be 3n times of operations, meaning for example if n is 5, then after 5 iterations time complexity will be 3 * 5 = 15 
+    - and one of the things to remember was to avoid constant values that's why a loop has always have 'n' time complexity 
+
+
+→ Worst case : Big O
+→ Average case : Theta 
+→ Best case : Omega
+
+
+Examples:
+    1. 
+    for (int i = 0, n = 10; i < n; i++) {
+        for (int j = 0, n = 10; j < n; j++) {
+            System.out.println("Hello, world!);
+        }
+    }
+    Time complexity : O(n)
+
+    2.
+    for (int i = 0, n = 10; i < n; i++) {
+        for (int j = 0; j < i; j++) {
+            System.out.println("Hello, world!);
+        }
+    }
+    Precise Time complexity : O(n(n + 1) / 2)
+    Now, 
+    we can say, n(n + 1) / 2 == (n^2 + n) / 2 == (n^2 /2) + (n / 2), now remove the lower bound, so we only have now n^2 / 2, remove the constant, so the Time Complexity is ~n^2
