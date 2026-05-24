@@ -1,0 +1,3 @@
+* Time Limit Exceeded
+
+It means that, in LeetCode or CodeForces, usually they give 1 sec to run the program, and during 1 sec, about 10^8 operations can be only performed, it includes every type of operation - prints, loops, conditionals everything, if your program exceeds this limit of operations then it shows TLE error.
