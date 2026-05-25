@@ -5,10 +5,17 @@
 
 package Hashmap;
 
+import java.util.Collections;
 import java.util.TreeMap;
 
 public class C_Treemap {
     public static void main(String[] args) {
-        TreeMap<String, Integer> tm = new TreeMap<>();
+        // ascending sorted order
+        TreeMap<String, Integer> atm = new TreeMap<>();
+
+        // descending sorted order
+        TreeMap<String, Integer> dtm = new TreeMap<>(Collections.reverseOrder());
+
+
     }
 }
